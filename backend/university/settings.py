@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'corsheaders',              # CORS Headers
     # My apps
     'account',      # App for user Model
+    'courses',      # App for Courses Model
+    'academic',
 ]
 
 MIDDLEWARE = [
@@ -134,9 +136,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # My additional Settings
 
 #   Add CORS Headers:
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # Add your NextJS frontend URL here
-]
+CORS_ALLOWED_ORIGINS = [ 'http://localhost:3000', ] # Add your NextJS frontend URL here
+CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000",]
+#CORS_ALLOW_HEADERS = ['*']
+#CORS_ALLOW_METHODS = ['*']
 
 AUTH_USER_MODEL = 'account.CustomUser'  # Custom User Model
 

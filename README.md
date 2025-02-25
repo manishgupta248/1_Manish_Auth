@@ -59,3 +59,19 @@ Setup Frontend - installed app frontend via nextJs and installed dependacies axi
 utils/store.js
 
 3. 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+…or create a new repository on the command line
+echo "# 1_Manish_Auth" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/manishgupta248/1_Manish_Auth.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/manishgupta248/1_Manish_Auth.git
+git branch -M main
+git push -u origin main
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+i my Django project i have backent in django to generate restful APIs endpoints with authentication implemented through Djoser and Djangorestframework-simplejwt. and at forntend app in NextJS i am using axios to make API calls and Zustand for state management. tokens are stored in httpOnly Cookie. in this I want to make another app courses which should have a model course with filelds COURSE_NAME, COURSE_CODE ( 10 characters), CATEGORY (Credits/CBCS), COURSE_CATEGORY ( COMPULSORY/ELECTIVE), TYPE(DISSERTATION/LABORATORY/PRACTICAL/PROJECT/THEORY/THEORY AND PRACTICAL/TUTORIAL), CREDIT_SCHEME(CREDIT/CBCS/NEP), CBCS_CATEGORY(MAJOR,MINOR,CORE,DSE,GE,OE,VAC,AECC,SEC,MDC,IDC), DISCIPLINE, MAXIMUM_CREDIT (0 to 20), QUALIFYING_IN_NATURE(YES/NO).
+------------------------------------------------------------------------
